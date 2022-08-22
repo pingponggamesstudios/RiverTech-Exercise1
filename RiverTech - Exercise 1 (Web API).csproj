@@ -6,4 +6,8 @@
     <RootNamespace>RiverTech___Exercise_1__Web_API_</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+  </ItemGroup>
+
 </Project>

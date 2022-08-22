@@ -10,11 +10,8 @@ namespace RiverTech___Exercise_1__Web_API_.Models
         public string Name { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }
-        public Address address { get; set; }
-
+        public Address Address { get; set; }
         public string Phone { get; set; }
         public string Website { get; set; }
-
-
     }
 }
