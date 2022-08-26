@@ -13,5 +13,7 @@ namespace RiverTech___Exercise_1__Web_API_.Models
         public Address Address { get; set; }
         public string Phone { get; set; }
         public string Website { get; set; }
+
+        public Company company { get; set; }
     }
 }

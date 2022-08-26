@@ -6,7 +6,7 @@ namespace RiverTech___Exercise_1__Web_API_.Models
 {
     public class Geo
     {
-        public decimal lat { get; set; }
-        public decimal lng { get; set; }
+        public string lat { get; set; }
+        public string lng { get; set; }
     }
 }

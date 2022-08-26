@@ -15,7 +15,11 @@ namespace RiverTech___Exercise_1__Web_API_.Controllers
     public class UsersController
     {
         public static HttpClient client = new HttpClient();
+
         private static bool isInitialised;
+        private static HttpResponseMessage _response;
+
+        public static HttpResponseMessage Response { get => _response; set => _response = value; }
 
         public static void InitialSetup()
         {
@@ -38,9 +42,9 @@ namespace RiverTech___Exercise_1__Web_API_.Controllers
 
             try
             {
-                // Get the user. URL provided by Rivertech
-                HttpResponseMessage response = await client.GetAsync("users/1/");
-                return response;
+                // Get the user and confirm that URL is valid. URL provided by Rivertech
+                _response = await client.GetAsync("users/1/");
+                return _response;
             }
             catch (Exception e)
             {

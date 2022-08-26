@@ -15,7 +15,8 @@ namespace RiverTech___Exercise_1__Web_API_TestScenarios
         {
             
            await Runner.AddSteps(
-                    Given_API_Server_is_Online)
+                    Given_API_Server_is_Online,
+                    When_Confirming_User_Credentials_Are_Correct)
                 .RunAsync();
         }
     }
