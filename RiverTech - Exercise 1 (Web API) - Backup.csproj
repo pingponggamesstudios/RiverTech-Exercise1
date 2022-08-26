@@ -1,12 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>RiverTech___Exercise_1__Web_API_</RootNamespace>
     <SignAssembly>false</SignAssembly>
-    <ApplicationIcon />
-    <StartupObject />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -14,12 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LightBDD.Core" Version="3.5.0" />
-    <PackageReference Include="LightBDD.Framework" Version="3.5.0" />
-    <PackageReference Include="LightBDD.NUnit3" Version="3.5.0" />
+    <PackageReference Include="LightBDD.XUnit2" Version="3.5.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
   </ItemGroup>
 
 </Project>
